@@ -92,8 +92,33 @@ var finances = [
 console.log("Total Months: " + finances.length);
 
 //The net total amount of Profit/Losses over the entire period.
+var sum = 0;
+for (i = 0; i < finances.length; i++) {
+    //repeat
+ //   console.log(finances[i][1])
+    sum += finances[i][1]
+}
 
-//The average of the changes in Profit/Losses over the entire period.
+
+console.log("Total: ", sum)
+
+
+
+//The average of the changes in Profit/Losses over the entire period.v
+
+var total = 0;
+
+for (i=0; i < finances.length-1; i++) {
+   // console.log(finances[i][0], finances[i+1][0])
+   // console.log(finances[i+1][1] - finances[i][1])
+   total += finances[i+1][1] - finances[i][1]
+
+}
+// console.log("total average:" ,total)
+console.log("average change", total/85)
+
+
+
 
 
 //The greatest increase in profits (date and amount) over the entire period.
