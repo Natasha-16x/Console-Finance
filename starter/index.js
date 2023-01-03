@@ -122,7 +122,7 @@ console.log("average change", total/85)
 
 
 //The greatest increase in profits (date and amount) over the entire period.
-
+// unsure how to do this 
 
 //The greatest decrease in losses (date and amount) over the entire period.
 
